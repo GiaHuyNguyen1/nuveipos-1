@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>On-Premise Integration — Till POS Integration API v1.3.32</title>
+<title>On-Premise Integration — Till POS Integration API v1.3.30</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <style>
@@ -503,7 +503,7 @@ pre.hljs { border-radius: 6px; font-size: 11.5px; padding: 12px 14px; overflow-x
         <span class="sh-subtitle">Nuvei</span>
       </div>
     </div>
-    <span class="sh-firmware">QA_1.3.32</span>
+    <span class="sh-firmware">QA_1.3.30</span>
   </div>
 
   <div class="nav-group">
@@ -601,9 +601,9 @@ pre.hljs { border-radius: 6px; font-size: 11.5px; padding: 12px 14px; overflow-x
           <li>Host Modes: Direct API Device – App 2 App Inter-Link</li>
         </ul>
         <div class="hero-meta">
-          <span class="hero-badge">API v1.3.32</span>
-          <span class="hero-badge">QA_1.3.32</span>
-          <span class="hero-badge hero-badge-muted">2026-10-15</span>
+          <span class="hero-badge">API v1.3.30</span>
+          <span class="hero-badge">QA_1.3.30</span>
+          <span class="hero-badge hero-badge-muted">2026-09-29</span>
         </div>
         <p class="hero-desc">REST API specification for integrating a third-party POS system with a payment terminal over a local network. Covers all transaction types, receipt options, async mode, and signature approval flow.</p>
       </div>
@@ -3453,11 +3453,6 @@ Content-Length: 1
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-dot latest"></div>
-          <div class="timeline-header"><span class="timeline-version">QA_1.3.32</span><span class="timeline-date">2026/10/15</span><span class="timeline-author">by Huy Nguyen</span></div>
-          <div class="timeline-notes"><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Correct typos and terminology (<code>MOTO Refund</code>, <code>Pre-auth</code>, US English) and rewrite unclear field descriptions.</span><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Reprint <code>RRN</code> accepts the last six or more characters of the stored RRN (suffix match, up to 12 characters).</span><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Document Scan Code <code>Timeout</code> in seconds with a 60-second default; negative values are rejected.</span><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Use <code>string(2)</code> for Shift Totals and Voucher Entry <code>Merchant</code>, and <code>"01"</code> in <code>Merchant</code> request examples.</span><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>List Pre-auth Cancel (<code>PAC</code>) and Extended (<code>PE</code>) under <code>PreAuthInquiry</code>.</span></div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
           <div class="timeline-header"><span class="timeline-version">QA_1.3.30</span><span class="timeline-date">2026/09/29</span><span class="timeline-author">by Huy Nguyen</span></div>
           <div class="timeline-notes"><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Add optional <code>TerminalID</code> to <code>querytransaction</code> responses, including completed and pending signature-status responses.</span></div>
         </div>
