@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>On-Premise Integration — Till POS Integration API v1.3.34</title>
+<title>On-Premise Integration — Till POS Integration API v1.3.35</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-light.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <style>
@@ -503,7 +503,7 @@ pre.hljs { border-radius: 6px; font-size: 11.5px; padding: 12px 14px; overflow-x
         <span class="sh-subtitle">Nuvei</span>
       </div>
     </div>
-    <span class="sh-firmware">QA_1.3.34</span>
+    <span class="sh-firmware">QA_1.3.35</span>
   </div>
 
   <div class="nav-group">
@@ -601,9 +601,9 @@ pre.hljs { border-radius: 6px; font-size: 11.5px; padding: 12px 14px; overflow-x
           <li>Host Modes: Direct API Device – App 2 App Inter-Link</li>
         </ul>
         <div class="hero-meta">
-          <span class="hero-badge">API v1.3.34</span>
-          <span class="hero-badge">QA_1.3.34</span>
-          <span class="hero-badge hero-badge-muted">2026-09-29</span>
+          <span class="hero-badge">API v1.3.35</span>
+          <span class="hero-badge">QA_1.3.35</span>
+          <span class="hero-badge hero-badge-muted">2026-11-26</span>
         </div>
         <p class="hero-desc">REST API specification for integrating a third-party POS system with a payment terminal over a local network. Covers all transaction types, receipt options, async mode, and signature approval flow.</p>
       </div>
@@ -3483,6 +3483,11 @@ Content-Length: 1
       <div class="timeline">
         <div class="timeline-item">
           <div class="timeline-dot latest"></div>
+          <div class="timeline-header"><span class="timeline-version">QA_1.3.35</span><span class="timeline-date">2026/11/26</span><span class="timeline-author">by Huy Nguyen</span></div>
+          <div class="timeline-notes"><span class="cl-badge new"><span class="cl-badge-type">NEW</span>Health check with host logon: <code>GET /healthcheck?Merchant=&lt;id&gt;</code> performs a host logon for that merchant. A request without the <code>Merchant</code> parameter stays the basic health check.</span></div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
           <div class="timeline-header"><span class="timeline-version">QA_1.3.34</span><span class="timeline-date">2026/10/27</span><span class="timeline-author">by Huy Nguyen</span></div>
           <div class="timeline-notes"><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Print the merchant signature copy when a paper signature is required, even if <code>DisablePrinting</code> is enabled.</span><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Ask for the MOTO password before manual card entry on the terminal when the MOTO password is enabled.</span><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>Reject a transaction type disabled for the merchant, and manual card entry when MOTO is disabled, with <code>"This Feature Is Not Available"</code>.</span><span class="cl-badge changed"><span class="cl-badge-type">CHANGED</span>An omitted <code>CustomerReceiptPrintOption</code> or <code>MerchantReceiptPrintOption</code> follows the terminal receipt configuration.</span></div>
         </div>
